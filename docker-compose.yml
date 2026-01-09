@@ -8,7 +8,7 @@ services:
     restart: unless-stopped
     user: "472"
     networks:
-      - internal
+      - internal_mon
     ports:
       - "3000:3000"
     env_file:
@@ -41,7 +41,7 @@ services:
     cap_add:
       - SYS_ADMIN
     networks:
-      - internal
+      - internal_mon
     expose:
       - 8081
     command:
@@ -79,7 +79,7 @@ services:
     hostname: rpi-exporter
     restart: unless-stopped
     networks:
-      - internal
+      - internal_mon
     expose:
       - 9100
     command:
@@ -123,7 +123,7 @@ services:
       - '--web.console.libraries=/usr/share/prometheus/console_libraries'
       - '--web.console.templates=/usr/share/prometheus/consoles'
     networks:
-      - internal
+      - internal_mon
     expose:
       - 9090
     volumes:
@@ -160,7 +160,7 @@ volumes:
       - "com.example.service=monitoring"
 
 networks:
-  internal:
+  internal_mon:
     driver: bridge
     ipam:
       driver: default
