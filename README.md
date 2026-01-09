@@ -51,7 +51,7 @@ This will start all the containers and make them available on the host machine.
 <br/>The following ports are used (only Grafana is exposed on the host machine):
 - 3000: Grafana
 - 9090: Prometheus
-- 8080: cAdvisor
+- 8081: cAdvisor
 - 9100: NodeExporter
 
 The Grafana dashboard can be accessed by navigating to `http://<host-ip>:3000` in your browser for example `http://192.168.1.100:3000`.
