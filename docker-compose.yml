@@ -158,6 +158,9 @@ volumes:
     labels:
       - "com.example.description=Prometheus Persistent Data"
       - "com.example.service=monitoring"
+  grafana-provisioning:
+  prometheus-etc:
+  
 
 networks:
   internal_mon:
