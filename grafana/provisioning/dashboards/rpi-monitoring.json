@@ -1134,7 +1134,7 @@
           {
             "matcher": {
               "id": "byName",
-              "options": "{id=\"/\",instance=\"cadvisor:8080\",job=\"prometheus\"}"
+              "options": "{id=\"/\",instance=\"cadvisor:8081\",job=\"prometheus\"}"
             },
             "properties": [
               {
